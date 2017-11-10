@@ -8,4 +8,10 @@ session_start();
  * and open the template in the editor.
  */
 
-echo "Hello dragi " . $_SESSION['user']->email;
+$isLogged = array_key_exists('user', $_SESSION);
+
+if($isLogged) {
+    echo "Welcome user " . $_SESSION['user']->name;
+} else {
+    header('Location:/project/login.php');
+}
