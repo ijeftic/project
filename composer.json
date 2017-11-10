@@ -1,0 +1,11 @@
+{
+    "name": "project",
+    "description": "project",
+    "keywords": ["test"],
+    "license": "MIT",
+    "type": "test",
+    "require": {
+        "php": ">=7.0.0",
+        "twbs/bootstrap": "^3.3"
+    }
+}
